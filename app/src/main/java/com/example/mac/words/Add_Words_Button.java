@@ -22,7 +22,7 @@ public class Add_Words_Button extends AppCompatActivity implements View.OnClickL
     public Button delete_words;
     public Button clear_words;
 
-    /*public LinearLayout theLayout;
+    public LinearLayout theLayout;
     public ToggleButton hiraganaKatakana;
     public int lengthCounter;
     public int spaceCounter;
@@ -217,9 +217,6 @@ public class Add_Words_Button extends AppCompatActivity implements View.OnClickL
         words_EditText = (EditText)findViewById(R.id.words);
         word_meanings_EditText = (EditText)findViewById(R.id.word_meanings);
 
-       /* theLayout = (LinearLayout) findViewById(R.id.theLayout);
-        theLayout.setVisibility(View.INVISIBLE);*/
-
         add_words = (Button)findViewById(R.id.add_words);
         update_words = (Button)findViewById(R.id.update_words);
         view_words= (Button)findViewById(R.id.view_words);
@@ -232,11 +229,11 @@ public class Add_Words_Button extends AppCompatActivity implements View.OnClickL
         delete_words.setOnClickListener(this);
         clear_words.setOnClickListener(this);
 
-        /*hiraganaKatakana = (ToggleButton)findViewById(R.id.hiraganaKatakana);
+        hiraganaKatakana = (ToggleButton)findViewById(R.id.hiraganaKatakana);
         hiraganaKatakana.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (hiraganaKatakana.isChecked()) {  ///カタカナ
+                if (hiraganaKatakana.isChecked()) {  
                     japaneseA.setText("ア");
                     japaneseI.setText("イ");
                     japaneseU.setText("ウ");
@@ -2799,15 +2796,9 @@ public class Add_Words_Button extends AppCompatActivity implements View.OnClickL
                 word_meanings_EditText.setText(word_meanings_EditText.getText() + " ");
                 spaceCounter++;
             }
-        });*/
+        });
 
     }
-
-    /*public void getLength() {
-        lengthCounter=word_meanings_EditText.length();
-    }*/
-
-
 
     @Override
     public void onClick(View view) {
@@ -2890,7 +2881,3 @@ public class Add_Words_Button extends AppCompatActivity implements View.OnClickL
         }
     }
 }
-
-
-        /*words_EditText.setInputType(InputType.TYPE_NULL);
-        word_meanings_EditText.setInputType(InputType.TYPE_NULL);*/
