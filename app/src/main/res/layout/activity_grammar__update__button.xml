@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    android:weightSum="4"
+    tools:context=".Grammar_Update_Button">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:background="@drawable/custom_button_square"
+            android:text="Grammar"
+            android:typeface="serif"
+            android:layout_marginRight="3dp"
+            android:layout_marginLeft="3dp"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:id="@+id/updateGrammar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="20dp"
+            android:gravity="top"
+            android:textStyle="bold"
+            android:layout_weight="4"
+            android:typeface="serif"
+            android:background="@drawable/custom_edittext"
+            android:textCursorDrawable="@drawable/custom_cursor"
+            />
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:background="@drawable/custom_button_square"
+            android:text="Save"
+            android:textColor="@color/colorWhite"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:layout_marginRight="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginBottom="5dp"
+            />
+</LinearLayout>
