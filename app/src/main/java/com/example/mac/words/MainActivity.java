@@ -45,52 +45,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        add_kanji_button=(Button)findViewById(R.id.add_kanji_button);
-        add_kanji_button.setOnClickListener(new View.OnClickListener(){
-
-            @Override
-            public void onClick(View v) {
-                Intent intentLoadNewActivity=new Intent(MainActivity.this,Add_Kanji_Button.class);
-                startActivity(intentLoadNewActivity);
-            }
-        });
-
         view_words_button=(Button)findViewById(R.id.view_words_button);
         view_words_button.setOnClickListener(new View.OnClickListener(){
 
             @Override
             public void onClick(View v) {
                 Intent intentLoadNewActivity=new Intent(MainActivity.this,View_Words_Button.class);
-                startActivity(intentLoadNewActivity);
-            }
-        });
-
-        view_kanji_button=(Button)findViewById(R.id.view_kanji_button);
-        view_kanji_button.setOnClickListener(new View.OnClickListener(){
-
-            @Override
-            public void onClick(View v) {
-                Intent intentLoadNewActivity=new Intent(MainActivity.this,View_Kanji_Button.class);
-                startActivity(intentLoadNewActivity);
-            }
-        });
-
-        random_words_button=(Button)findViewById(R.id.random_words_button);
-        random_words_button.setOnClickListener(new View.OnClickListener(){
-
-            @Override
-            public void onClick(View v) {
-                Intent intentLoadNewActivity=new Intent(MainActivity.this,Random_Words_Button.class);
-                startActivity(intentLoadNewActivity);
-            }
-        });
-
-        random_kanji_button=(Button)findViewById(R.id.random_kanji_button);
-        random_kanji_button.setOnClickListener(new View.OnClickListener(){
-
-            @Override
-            public void onClick(View v) {
-                Intent intentLoadNewActivity=new Intent(MainActivity.this,Random_Kanji_Button.class);
                 startActivity(intentLoadNewActivity);
             }
         });
